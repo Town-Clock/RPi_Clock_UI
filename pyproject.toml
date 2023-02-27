@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "template_package"
-version = "1.1.0"
+name = "clock_ui"
+version = "0.1.0"
 description = "A Template python package"
 authors = ["Zack Hankin <zthankin@gmail.com>"]
 readme = "README.md"
 repository = "https://github.com/Ozy-Viking/template"
 documentation = "https://ozy-viking-template.readthedocs.io"
-packages = [{include = "template_package"}]
+packages = [{include = "clock_ui"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -35,11 +35,11 @@ docs = ['sphinx', 'myst-parser', 'sphinx-rtd-theme']
 dev = ['mypy', 'tox', 'pytest']
 
 [tool.poetry.scripts]
-square = "template_package:main"
+square = "clock_ui:main"
 
 [tool.mypy]
 mypy_path = '$MYPY_CONFIG_FILE_DIR'
-files = '$MYPY_CONFIG_FILE_DIR/template_package'
+files = '$MYPY_CONFIG_FILE_DIR/clock_ui'
 explicit_package_bases = false
 ignore_missing_imports = true
 exclude = [

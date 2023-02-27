@@ -1,7 +1,7 @@
 API
-================
+========
 
 .. toctree::
    :maxdepth: 4
 
-   template_package
+   clock_ui

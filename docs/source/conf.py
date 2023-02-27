@@ -6,10 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "Template for Projects"
+project = "UI for Town Clock"
 copyright = "2023, Zack Hankin"
-author = "Zack Hankin"
-release = "1.0.0"
+author = "Zack Hankin <zthankin@gmail.com>"
+release = "0.1.1"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
