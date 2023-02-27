@@ -17,8 +17,9 @@ def fetch_version(max_folders_up: int = 3) -> tuple[str, str]:
         max_folders_up (int): Max number of folders up to search.
 
     Returns:
-        tuple[str, str]: Release and Version number for project, using the semantic version style.
-             E.g. "0.1.1", "0.1"
+        tuple[str, str]: Release and Version number for project,
+                         using the semantic version style.
+                         E.g. "0.1.1", "0.1"
     """
     ret_release: str = ">0.2.0"
     try:
@@ -35,14 +36,15 @@ def fetch_version(max_folders_up: int = 3) -> tuple[str, str]:
                     ret_release = line.split('"')[1]
     except FileNotFoundError:
         raise
-    ret_version: str = ret_release  # .rpartition(".")[0]
+    ret_version: str = ret_release.rpartition(".")[0]
     return ret_release, ret_version
 
 
 project = "UI for Town Clock"
 copyright = "2023, Zack Hankin"
 author = "Zack Hankin <zthankin@gmail.com>"
-release, version = fetch_version()
+release, _ = fetch_version()
+version = release
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
