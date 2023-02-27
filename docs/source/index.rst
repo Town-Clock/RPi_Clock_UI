@@ -11,7 +11,7 @@ Welcome to the UI's documentation!
 
    readme_link
    usage
-   modules
+   clock_ui
 
 Indices and tables
 ==================
